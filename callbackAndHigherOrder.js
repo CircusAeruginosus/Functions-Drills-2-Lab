@@ -228,6 +228,19 @@ getUserById(users, '16t', user => {
 
 // CODE HERE
 
+// one line with no parentheses
+const addingFactory = x => y => x + y
+
+// it's a little easier to wrap your head around it like this
+const addingFactory = (x) => (y) => x + y;
+
+// and here's a more straightforward syntax of the same thing
+const addingFactory = x => {
+    return function(y) {
+        return x + y
+    }
+}
+
 /*
   Now that you have addingFactory, you can create other
   functions from it. 
@@ -241,6 +254,7 @@ getUserById(users, '16t', user => {
 */
 
 // CODE HERE
+const addTen = addingFactory(10)
 
 /*
   Now the inner function is stored in the addTen variable! 
@@ -253,6 +267,8 @@ getUserById(users, '16t', user => {
 */
 
 // CODE HERE
+console.log(addTen(5))
+console.log(addTen(5789))
 
 /*
   Let's make another function from the addingFactory. 
@@ -266,3 +282,7 @@ getUserById(users, '16t', user => {
 */
 
 // CODE HERE
+const addFour = addingFactory(4)
+
+console.log(addFour(4))
+console.log(addFour(4444444))
