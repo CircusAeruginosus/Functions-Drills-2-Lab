@@ -11,7 +11,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+expression //<--- answer
 
 
 
@@ -26,7 +26,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-// arrow
+arrow //<--- answer
 // declaration
 // expression
 
@@ -36,6 +36,7 @@ const exclaimTwo = str => {
 
   Brownie points if you use a template string
 */
+const exclaimThree = str => `${str.toUpperCase()}!!!`
 
 
 
@@ -51,7 +52,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-// declaration
+declaration //<--- answer
 // expression
 
 
@@ -63,6 +64,9 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+const jsNinja = () => "I am a JavaScript ninja!"
+
+console.log(jsNinja)
 
 
 
@@ -78,6 +82,15 @@ function exclaimFour(str) {
 */
 
 //CODE HERE
+const compareNums = (num1, num2) => {
+  if (num1 > num2){
+    return num1
+  } else {
+    return num2
+  }
+}
+
+console.log(compareNums(2, 4))
 
   
 ////////// PROBLEM 6 //////////
