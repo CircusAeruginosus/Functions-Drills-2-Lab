@@ -11,7 +11,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-expression //<--- answer
+// expression <--- answer
 
 
 
@@ -26,7 +26,7 @@ const exclaimTwo = str => {
   return str.toUpperCase() + '!!!'
 }
 
-arrow //<--- answer
+// arrow <--- answer
 // declaration
 // expression
 
@@ -52,7 +52,7 @@ function exclaimFour(str) {
 }
 
 // arrow
-declaration //<--- answer
+// declaration <--- answer
 // expression
 
 
@@ -66,7 +66,7 @@ declaration //<--- answer
 //CODE HERE
 const jsNinja = () => "I am a JavaScript ninja!"
 
-console.log(jsNinja)
+console.log(jsNinja())
 
 
 
@@ -107,3 +107,9 @@ console.log(compareNums(2, 4))
 */
 
 //CODE HERE
+
+const bestMovie = title => {
+return `${title} is the best movie ever!`
+}
+
+console.log(bestMovie("Hocus Pocus"))
